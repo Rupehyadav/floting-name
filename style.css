@@ -1,0 +1,27 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	min-height: 100vh;
+	background: radial-gradient(silver,gray);
+}
+h1{
+	font-size: 80px;
+	text-transform: uppercase;
+	color: #000;
+	transform: rotate(-20deg) skew(25deg);
+	animation: anim 5s ease-in-out infinite;
+}
+@keyframes anim{
+	0%,100%{
+		transform: rotate(-20deg) skew(25deg)translate(0,0);
+		text-shadow: -5px 5px 0 rgba(0, 0, 0, 1.2);
+	}
+	50%{
+		transform: rotate(-20deg) skew(10deg) translate(50px,-50px);
+		text-shadow: -50px 50px 0 rgba(0, 0, 0, 1.2);
+		filter: blur;
+	}
+}
